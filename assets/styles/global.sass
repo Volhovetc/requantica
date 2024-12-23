@@ -1,0 +1,30 @@
+
+@import '_imports'
+
+html,
+.html
+	font-family: 'ArtifaktElement', sans-serif
+	font-size: 10px
+	line-height: 1
+	
+	+laptop
+		font-size: 8px
+
+body,
+.body
+	background-color: var(--bg)
+	color: var(--text)
+
+::selection
+	background: var(--bgSelection)
+	color: var(--text)
+
+::-webkit-scrollbar 
+		background-color: transparent // Цвет бегунка
+		border-radius: 0 // Округление бегунка 
+		width: .5rem
+		height: .5rem
+
+::-webkit-scrollbar-thumb 
+		background-color: var(--green)
+		border-radius: 3rem

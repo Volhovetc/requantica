@@ -1,0 +1,194 @@
+$redColor: #FE4143
+$greenColor: #33C078
+$green600Color: #26A471
+$darkGreenColor: #1C3E3A
+$blueColor: #127BE4
+$lightBlueColor: #8AD6F0
+$lightBlue600Color: #64ACCE
+$yellowColor: #FDD67E
+$violetColor: #BD8AF0
+$pinkColor: #E92064
+
+$whiteColor: #FFFFFF
+$greyPrimaryColor: #6B7177
+$blackColor: #000000
+
+$grey25Color: #FCFCFD
+$grey50Color: #F9FAFB
+$grey100Color: #F2F4F7
+$grey200Color: #EAECF0
+$grey300Color: #D0D5DD
+$grey400Color: #98A2B3
+$grey500Color: #667085
+$grey600Color: #475467
+$grey700Color: #344054
+$grey800Color: #1D2939
+$grey900Color: #101828
+
+$brand1-25Color: #202932
+$brand1-35Color: #17202B
+$brand1-50Color: #181F26
+$brand1-100Color: #101519
+$brand1-200Color: #080A0D
+
+$brand2-25Color: #464E60
+$brand2-50Color: #353B48
+$brand2-100Color: #232730
+$brand2-200Color: #111418
+
+:root
+	--red: #{$redColor}
+	--green: #{$greenColor}
+	--green600: #{$green600Color}
+	--darkGreen: #{$darkGreenColor}
+	--blue: #{$blueColor}
+	--lightBlue: #{$lightBlueColor}
+	--lightBlue600: #{$lightBlue600Color}
+	--yellow: #{$yellowColor}
+	--violet: #{$violetColor}
+	--pink: #{$pinkColor}
+
+	--white: #{$whiteColor}
+	--greyPrimary: #{$greyPrimaryColor}
+	--black: #{$blackColor}
+	
+	--grey25: #{$grey25Color}
+	--grey50: #{$grey50Color}
+	--grey100: #{$grey100Color}
+	--grey200: #{$grey200Color}
+	--grey300: #{$grey300Color}
+	--grey400: #{$grey400Color}
+	--grey500: #{$grey500Color}
+	--grey600: #{$grey600Color}
+	--grey700: #{$grey700Color}
+	--grey800: #{$grey800Color}
+	--grey900: #{$grey900Color}
+
+	--brand1-25: #{$brand1-25Color}
+	--brand1-35: #{$brand1-35Color}
+	--brand1-50: #{$brand1-50Color}
+	--brand1-100: #{$brand1-100Color}
+	--brand1-200: #{$brand1-200Color}
+
+	--brand2-25: #{$brand2-25Color}
+	--brand2-50: #{$brand2-50Color}
+	--brand2-100: #{$brand2-100Color}
+	--brand2-200: #{$brand2-200Color}
+
+
+	// alpha
+	--whiteT2: color-mix(in srgb, transparent, #{$whiteColor} 2%)
+	--whiteT5: color-mix(in srgb, transparent, #{$whiteColor} 5%)
+	--whiteT10: color-mix(in srgb, transparent, #{$whiteColor} 10%)
+	--whiteT20: color-mix(in srgb, transparent, #{$whiteColor} 20%)
+	--brand1-100T90: color-mix(in srgb, transparent, #{$brand1-100Color} 90%)
+	--greenT10: color-mix(in srgb, transparent, #{$greenColor} 10%)
+	--darkGreenT50: color-mix(in srgb, transparent, #{$darkGreenColor} 50%)
+	--redT10: color-mix(in srgb, transparent, #{$redColor} 10%)
+	--redT25: color-mix(in srgb, transparent, #{$redColor} 25%)
+	--redT60: color-mix(in srgb, transparent, #{$redColor} 60%)
+
+	// States
+	--active: var(--green600)
+	--success: var(--green)
+	--successT10: var(--greenT10)
+	--required: var(--yellow)
+	--error: var(--red)
+	--errorT10: var(--redT10)
+
+	--stageQueue: var(--brand2-25)
+
+	// Text
+	--text: var(--white)
+	--textDisabled: var(--grey500)
+	--textInput: var(--white)
+	--textLabel: var(--white)
+	--textLabelActive: var(--green)
+	--textLabelInput: var(--grey500)
+	--textLabelLight: var(--grey500)
+	--textMail: var(--lightBlue)
+	--textMailHover: var(--lightBlue600)
+	--textSwitch: var(--grey700)
+	--textSwitchActive: var(--green)
+	--textSwitchInner: var(--greyPrimary)
+	--textSwitchHover: var(--darkGreen)
+	--textTab: var(--grey400)
+	--textTooltip: var(--brand1-25)
+	--titlePage: var(--white)
+
+	// Backgrounds
+	--bg: var(--brand1-25)
+	--bgButton: var(--brand2-25)
+	--bgButtonDisabled: var(--brand1-25)
+	--bgCheckBoxHover: var(--darkGreen)
+	--bgContextMenu: var(--brand1-25)
+	--bgDropDownItems: var(--brand1-25)
+	--bgDropMenu: var(--brand1-35)
+	--bgFileLight: var(--brand1-25)
+	--bgFileDark: var(--brand1-35)
+	--bgHeader: var(--brand1-25)
+	--bgInput: var(--whiteT2)
+	--bgInputHover: var(--green)
+	--bgInputActive: var(--green600)
+	--bgInputError: var(--red)
+	--bgModal: var(--brand1-35)
+	--bgModalAround: var(--brand1-100T90)
+	--bgNav: var(--brand2-25)
+	--bgNavItemActive: var(--green)
+	--bgNavSupport: var(--brand1-25)
+	--bgProgressBar: var(--green)
+	--bgProgressBarWarning: var(--red)
+	--bgSelection: var(--green600)
+	--bgStages: var(--brand1-35)
+	--bgSwitch: var(--grey700)
+	--bgSwitchHover: var(--darkGreen)
+	--bgSwitchFloat: var(--green)
+	--bgTab: var(--brand2-50)
+	--bgTabActive: var(--brand1-35)
+	--bgTabHover: var(--brand1-35)
+	--bgTabSide: var(--brand1-35)
+	--bgTooltip: var(--white)
+
+	// Borders
+	--borderButton: var(--grey500)
+	--borderCheckBoxActive: var(--green)
+	--borderCheckBoxError: var(--red)
+	--borderContextMenu: var(--brand2-25)
+	--borderDropMenu: var(--brand2-25)
+	--borderInput: var(--brand2-25)
+	--borderInputCorrect: var(--green)
+	--borderInputError: var(--red)
+	--borderInputFocus: var(--grey500)
+	--borderInputHover: var(--grey500)
+	--borderMenu: var(--grey500)
+	--borderProgressBar: var(--green)
+	--borderProgressBarWarning: var(--red)
+	--borderSeparator: var(--brand2-25)
+
+	// Placeholders
+	--placeholderInput: var(--grey500)
+
+	// DatePicker TPM
+	--popout-bg-color: #fff
+	--box-shadow: 0 0 1px 0 rgba(128, 144, 160, 0.81)
+	--text-color: #000000
+	--border-radius: 3px
+	--heading-size: 2.5em
+	--heading-weight: bold
+	--heading-hover-color: #eeeeee
+	--arrow-color: currentColor
+
+	--elem-color: currentColor
+	--elem-disabled-color: #d5d9e0
+	--elem-hover-color: #fff
+	--elem-hover-bg-color: #0baf74
+	--elem-selected-color: #fff
+	--elem-selected-bg-color: #0baf74
+
+	--elem-current-outline-color: #888
+	--elem-current-font-weight: bold
+
+	--elem-font-size: 0.8em
+	--elem-border-radius: 3px
+
+	--divider-color: var(--elem-disabled-color)

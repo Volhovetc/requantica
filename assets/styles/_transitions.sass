@@ -1,0 +1,66 @@
+// Переходы между страницами
+.page-enter-active,
+.page-leave-active
+	+transition(opacity, .5)
+
+.page-enter-from
+	opacity: 0
+
+.page-leave-to
+	opacity: 0
+
+// Переходы между лейаутами
+.layout-enter-active,
+.layout-leave-active
+	+transition([transform, opacity], .5)
+
+.layout-enter-from
+	opacity: 0
+	transform: translateY(calc(100% / 5))
+
+.layout-leave-to
+	opacity: 0
+	transform: translateY(calc(-100% / 5))
+
+.layout-enter-to,
+.layout-leave-from
+	opacity: 1
+
+// Появление элемента с плавным изменением прозрачности
+.opacity-enter-active,
+.opacity-leave-active
+	+transition(opacity)
+
+.opacity-enter-from,
+.opacity-leave-to
+	opacity: 0
+
+.opacity-leave-from,
+.opacity-enter-to
+	opacity: 1
+
+// Появление элемента с плавным изменением прозрачности для out-in
+.opacityOutIn-enter-active,
+.opacityOutIn-leave-active
+	+transition(opacity, .5)
+
+.opacityOutIn-enter-from,
+.opacityOutIn-leave-to
+	opacity: 0
+
+.opacityOutIn-leave-from,
+.opacityOutIn-enter-to
+	opacity: 1
+
+// Появление элемента с плавным изменением прозрачности для out-in
+.opacityHalfOutIn-enter-active,
+.opacityHalfOutIn-leave-active
+	+transition(opacity, .5)
+
+.opacityHalfOutIn-enter-from,
+.opacityHalfOutIn-leave-to
+	opacity: .5
+
+.opacityHalfOutIn-leave-from,
+.opacityHalfOutIn-enter-to
+	opacity: 1
